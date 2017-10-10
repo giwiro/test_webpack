@@ -4,11 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+      "start": "webpack --config webpack.config.common.js",
+      "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Gi Wah Dávalos Loo <giwirodavalos@gmail.com>",
   "license": "ISC",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "webpack": "^3.6.0"
   }
 }
