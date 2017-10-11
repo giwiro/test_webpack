@@ -1,1 +1,3 @@
-console.log('holi');
+import say from './test';
+
+say('Gi Wah');
