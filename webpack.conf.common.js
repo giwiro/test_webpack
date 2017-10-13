@@ -6,11 +6,13 @@ const distFolder = 'dist';
 
 module.exports = {
     entry: {
-        app: './src/app.js',
+        app: './src/index.js',
     },
     plugins: [
         new CleanWebpackPlugin([distFolder]),
-        new HtmlWebpackPlugin()
+        new HtmlWebpackPlugin({
+            template: 'main.tmpl.ejs'
+        })
     ],
     module: {
         rules: [
